@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    
+	<title>AdminPanel</title>
+</head>
+<body>
+	<a href="/index.html"><img src="./img/free-icon-exit-3329375.png" alt="" width="50px" height="50px"></a>
+	<h1>Добавление автомобиля</h1>
+	<form action="/api/add_car.php" method="post">
+		<label for="car_make">Марка автомобиля:</label>
+		<input type="text" id="car_make" name="car_make" required><br>
+
+		<label for="car_model">Модель автомобиля:</label>
+		<input type="text" id="car_model" name="car_model" required><br>
+
+		<label for="car_year">Год выпуска автомобиля:</label>
+		<input type="number" id="car_year" name="car_year" required><br>
+
+		<label for="car_color">Цвет автомобиля:</label>
+		<input type="text" id="car_color" name="car_color" required><br>
+
+		<label for="car_price">Цена автомобиля:</label>
+		<input type="number" id="car_price" name="car_price" required><br>
+
+		<label for="car_image">Фото автомобиля:</label>
+		<input type="file" id="car_image" name="car_image"><br>
+
+		<input type="submit" value="Добавить автомобиль">
+	</form>
+
+	<h1>Удаление автомобиля</h1>
+	<form action="/api/delete_car.php" method="post">
+		<label for="car_id">ID автомобиля:</label>
+		<input type="number" id="car_id" name="car_id" required><br>
+
+		<input type="submit" value="Удалить автомобиль">
+	</form>
+    <style>
+		
+
+body {
+  background-color: #1c1c1c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #252525;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #007acc;
+}
+
+input[type="submit"] {
+	width: 450px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Стили для формы добавления автомобиля */
+#car_make,
+#car_model,
+#car_year,
+#car_color,
+#car_price {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Стили для формы удаления автомобиля */
+#car_id {
+  width: 100%;
+  max-width: 200px;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+
+
+
+    </style>
+</body>
+</html>

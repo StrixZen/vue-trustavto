@@ -1,0 +1,378 @@
+.fourth-sec{
+    margin: 0 auto;
+    padding-top: 354px;
+    width: 1777px;
+    height: 1156px;
+}
+
+.fourth-sec-text{
+    margin: 0 auto;
+    width: 836px;
+    height: 155px;
+}
+
+.fourth-sec-text h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: center;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' -10;
+}
+
+/* Блок с карточками */
+.fourth-card{
+    padding-top: 277px;
+    margin: 0 auto;
+    width: 1777px;
+    height: 724px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Первая карточка */
+.fourth-card1{
+    width: 538px;
+    height: 724px;
+    background: #111111;
+    border: 6px solid #505050;
+}
+
+.fourth-card-img{
+    width: 538px;
+    height: 309px;
+}
+
+.fourth-card1-name{
+    padding-left: 32px;
+    padding-top: 47px;
+    margin: 0;
+    width: 195px;
+    height: 78px;
+}
+
+.fourth-card1-name h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fourth-card1-name h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+
+.fourth-card1-inf{
+    width: 296px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fourth-card1-info{
+    padding-top: 49px;
+    padding-left: 32px;
+    width: 90px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-card1-info h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 624;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card1-info h2{
+    padding-top: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 653;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card1-price{
+    padding-left: 270px;
+    width: 250px;
+    height: 48px;
+    padding-top: 150px;
+}
+
+.fourth-card1-price h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 836;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' -10;
+    text-shadow: 1px 1px 20px rgba(255, 230, 10, 0.54);
+}
+
+
+
+
+/* Вторая карточка */
+
+.fourth-card2{
+    width: 538px;
+    height: 724px;
+    background: #111111;
+    border: 6px solid #505050;
+}
+
+.fourth-card-img{
+    width: 538px;
+    height: 309px;
+}
+
+.fourth-card2-name{
+    padding-left: 32px;
+    padding-top: 47px;
+    margin: 0;
+    width: 386px;
+    height: 78px;
+}
+
+.fourth-card2-name h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fourth-card2-name h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+
+.fourth-card2-inf{
+    width: 296px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fourth-card2-info{
+    padding-top: 49px;
+    padding-left: 32px;
+    width: 90px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-card2-info h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 624;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card2-info h2{
+    padding-top: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 653;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card2-price{
+    padding-left: 270px;
+    width: 255px;
+    height: 48px;
+    padding-top: 150px;
+}
+
+.fourth-card2-price h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 836;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' -10;
+    text-shadow: 1px 1px 20px rgba(255, 230, 10, 0.54);
+}
+
+
+
+
+
+/* Третья карточка */
+
+.fourth-card3{
+    width: 538px;
+    height: 724px;
+    background: #111111;
+    border: 6px solid #505050;
+}
+
+.fourth-card-img{
+    width: 538px;
+    height: 309px;
+}
+
+.fourth-card3-name{
+    padding-left: 32px;
+    padding-top: 47px;
+    margin: 0;
+    width: 399px;
+    height: 78px;
+}
+
+.fourth-card3-name h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fourth-card3-name h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+
+.fourth-card3-inf{
+    width: 296px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fourth-card3-info{
+    padding-top: 49px;
+    padding-left: 32px;
+    width: 90px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-card3-info h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 624;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #505050;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card3-info h2{
+    padding-top: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 653;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+}
+
+.fourth-card3-price{
+    padding-left: 270px;
+    width: 257px;
+    height: 48px;
+    padding-top: 150px;
+}
+
+.fourth-card3-price h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 836;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' -10;
+    text-shadow: 1px 1px 20px rgba(255, 230, 10, 0.54);
+}

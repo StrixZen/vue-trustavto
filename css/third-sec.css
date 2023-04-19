@@ -1,0 +1,157 @@
+.third-sec{
+    width: 1903px;
+    height: 3088px;
+}
+
+.third-text{
+    margin: 0 auto;
+    width: 985px;
+    height: 155px;
+}
+
+.third-text h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+}
+
+.third-block1{
+    padding-left: 130px;
+    padding-top: 140px;
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-block1-text{
+    padding-top: 150px;
+    width: 894px;
+    height: 79px;
+}
+
+.third-block1-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.third-block2{
+    padding-left: 130px;
+    padding-top: 140px;
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-block2-text{
+    padding-top: 150px;
+    width: 894px;
+    height: 79px;
+}
+
+.third-block2-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.third-block3{
+    padding-left: 130px;
+    padding-top: 140px;
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-block3-text{
+    padding-top: 150px;
+    width: 894px;
+    height: 79px;
+}
+
+.third-block3-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.third-block4{
+    padding-left: 130px;
+    padding-top: 140px;
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-block4-text{
+    padding-top: 150px;
+    width: 894px;
+    height: 79px;
+}
+
+.third-block4-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.third-block5{
+    padding-left: 130px;
+    padding-top: 140px;
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-block5-text{
+    padding-top: 150px;
+    width: 894px;
+    height: 79px;
+}
+
+.third-block5-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    text-indent: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

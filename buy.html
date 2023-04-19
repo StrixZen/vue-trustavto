@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/buy.css">
+    <link rel="stylesheet" href="./css/">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+        </div>
+        <div class="header-link">
+            <a href="./index.html">О нас</a>
+            <a href="./Catalog.html">Каталог</a>
+            <a href="#map">Где купить</a>
+            <a href="./Sale.html">Продать авто</a>
+            <a href="./api/car.php">Редакт</a>
+            <a href="./profile.php"><img src="./img/user-icon.png" alt="" width="40px"></a>
+        </div>
+    </div>
+    <form action="./api/order.php" method="post">
+        
+        <label for="buyer_name">Имя покупателя:</label>
+        <input type="text" id="buyer_name" name="buyer_name" required>
+
+        <label for="surname_name">Фамилия покупателя:</label>
+        <input type="text" id="surname_name" name="surname_name" required>
+        
+        <label for="buyer_phone">Телефон покупателя:</label>
+        <input type="tel" id="buyer_phone" name="buyer_phone" required>
+        
+        <label for="buyer_email">Email покупателя:</label>
+        <input type="email" id="buyer_email" name="buyer_email" required>
+        
+        <input type="submit" value="Заказать">
+      </form>
+      
+</body>
+</html>

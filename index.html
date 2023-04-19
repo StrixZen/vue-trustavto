@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/first-sec.css">
+    <link rel="stylesheet" href="./css/second-sec.css">
+    <link rel="stylesheet" href="./css/third-sec.css">
+    <link rel="stylesheet" href="./css/fourth-sec.css">
+    <link rel="stylesheet" href="./css/five-sec.css">
+    <title>TRUST_AVTO</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+            </div>
+            <div class="header-link">
+                <a href="./index.html">О нас</a>
+                <a href="./Catalog.html">Каталог</a>
+                <a href="#map">Где купить</a>
+                <a href="./Sale.html">Продать авто</a>
+                <a href="./api/car.php">Редакт</a>
+                <a href="./profile.php"><img src="./img/user-icon.png" alt="" width="40px"></a>
+            </div>
+        </div>
+
+        <first-section>
+            <div class="first-sec">
+                <div class="first-text">
+                    <h1>О НАС</h1>
+                </div>
+                <div class="first-text2">
+                    <h1>Мы работаем с 2009 года и за это время достигли немалых <br> успехов. Совместными усилиями мы реализовали более 1 тысячи <br> автомобилей, а также запустили проекты, которые очень быстро <br> получили свою известность благодаря качеству предоставляемых <br> услуг.
+                        В нашем салоне вы можете преобрести  автомобили премиум- <br> класса без подводных камней и скрытых неисправностей</h1>
+                        
+                        <div id="form-container">
+                            <form id="login-form" action="./api/login.php" method="post">
+                              <label for="username">Авторизация</label>
+                              <input type="email" id="email" name="email" placeholder="E-mail:" required>
+                              <input type="password" id="password1" name="password1" placeholder="Password:" required>
+                              <div class="links">
+                                <a href="./index.html">Главная</a>
+                                <a href="./api/register.php">Регистрация</a>
+                              </div>
+                              <button id="loginBtn" type="submit" value="Войти">Войти</button>
+                            </form>
+                          
+                            <form id="register-form" action="./api/register.php" method="post">
+                              <label for="">Регистрация</label>
+                              <input type="text" name="login" id="login" placeholder="Login:" required>
+                              <input type="email" name="email" id="email" placeholder="E-Mail:" required>
+                              <input type="text" name="city" id="city" placeholder="City:" required>
+                              <input type="password" name="password1" id="password1" placeholder="Password:" required>
+                              <input type="password" name="password2" id="password2" placeholder="Password:" required>
+                              <div class="links">
+                                <a href="./index.html">Главная</a>
+                                <a href="./api/login.php">Войти</a>
+                                <a href="./admin.html">admin</a>
+                              </div>
+                              <button type="submit" value="Регистрация">Регистрация</button>
+                            </form>
+
+                            <form id="success-form" style="display: none;">
+
+                                <div id="sucessForm">
+                                    <!-- Форма профиля -->
+                                    <img src="./img/user-icon.png" alt="Аватар пользователя" style="display: block; margin: 20px auto;" width="100px">
+                                    <label for="login">Логин:</label>
+                                
+                                    <label for="email">Почта:</label>
+                                </div>
+
+                                
+                                
+                            </form>
+                              <style>
+                              form{ 
+                              background-color: rgba(0, 0, 0, 0.603);
+                              width: 400px;
+                              border-radius: 50px;
+                              display: flex; 
+                              flex-direction: column;
+                              align-items: center;
+                                                            
+                              } 
+                              label{
+                              color: aliceblue;
+                              font-size: 20px;
+                              }
+                              </style>
+
+                            
+                          </div>
+
+                          
+                          
+                          
+                          <script>
+                            const loginForm = document.querySelector('#login-form');
+                            const loginBtn = document.getElementById("loginBtn");
+                            const sucessForm = document.querySelector('#sucess-form');
+                            const registerForm = document.querySelector('#register-form');
+                            const formContainer = document.querySelector('#form-container');
+                          
+                            // функция для замены формы входа на форму регистрации
+                            function showRegisterForm() {
+                              formContainer.replaceChild(registerForm, loginForm);
+                            }
+                          
+                            // функция для замены формы регистрации формой входа в систему
+                            function showLoginForm() {
+                              formContainer.replaceChild(loginForm, registerForm);
+                            }
+
+                          
+                            // добавление события к ссылке регистрация, чтобы показать форму регистрации
+                            const registerLink = document.querySelector('a[href="./api/register.php"]');
+                            registerLink.addEventListener('click', (event) => {
+                              event.preventDefault(); // не перенаправлять
+                              showRegisterForm(); // показать форму регистрации
+                            });
+                          
+                            // добавление события к ссылке входа, чтобы показать форму входа
+                            const loginLink = document.querySelector('a[href="./api/login.php"]');
+                            loginLink.addEventListener('click', (event) => {
+                              event.preventDefault(); // не перенаправлять
+                              showLoginForm(); // показать форму входа в систему
+                            });
+
+                            
+
+                            // Добавляем событие клика на кнопку входа
+                            loginBtn.addEventListener("click", () => {
+                            // Показываем форму профиля
+                            sucessForm.style.display = "block";
+                            });
+
+                            
+                          </script>
+                          
+                </div>
+                
+            </div>
+        </first-section>
+
+        <second-section>
+            <div class="second-sec">
+                <div class="second-text">
+                    <h1>TRUST AVTO</h1>
+                    <h2>ПРЕМИУМ</h2>
+                    <a href="./Catalog.html"><button>Купить</button></a>
+                </div>
+            </div>
+        </second-section>
+
+        <third-section>
+            <div class="third-sec">
+                <div class="third-text">
+                    <h1>НАШИ УСЛУГИ</h1>
+                </div>
+
+                <div class="third-block1">
+                    <div class="third-block1-img">
+                        <a href="./Catalog.html"><img src="img/sale.png" alt="" width="90%" height="90%"></a>
+                    </div>
+                    <div class="third-block1-text">
+                        <h1>Продажа автомобилей</h1>
+                    </div>
+                </div>
+
+                <div class="third-block2">
+                    <div class="third-block2-text">
+                        <h1>Выкуп автомобилей</h1>
+                    </div>
+
+                    <div class="third-block2-img">
+                        <a href="./Sale.html"><img src="./img/buy.png" alt="" width="90%" height="90%"></a>
+                    </div> 
+                </div>
+
+                <div class="third-block3">
+                    <div class="third-block3-img">
+                        <a href="./Sale.html"><img src="./img/help.png" alt="" width="90%" height="90%"></a>
+                    </div>
+                    <div class="third-block3-text">
+                        <h1>Помощь в продаже</h1>
+                    </div>
+                </div>
+
+                <div class="third-block4">
+                    <div class="third-block4-text">
+                        <h1>подбор автомобилей</h1>
+                    </div>
+
+                    <div class="third-block4-img">
+                        <a href="./Catalog.html"><img src="./img/podbor.png" alt="" width="90%" height="90%"></a>
+                    </div> 
+                </div>
+
+                <div class="third-block5">
+                    <div class="third-block5-img">
+                        <a href="./detail.html"><img src="./img/detail.png" alt="" width="90%" height="90%"></a>
+                    </div>
+                    <div class="third-block5-text">
+                        <h1>дEтейлинг</h1>
+                    </div>
+                </div>
+            </div>
+        </third-section>
+
+        <fourth-section>
+            <div class="fourth-sec">
+                <div class="fourth-sec-text">
+                    <h1>в продаже</h1>
+                </div>
+                <div class="fourth-card">
+                    <!-- Первая карточка -->
+                    <div class="fourth-card1">
+                        <div class="fourth-card-img">
+                            <img src="./img/porshe.png" alt="">
+                        </div>
+
+                        <div class="fourth-card1-name">
+                            <h1>porshe 911</h1>
+                            <h2>2021</h2>
+                        </div>
+                        <div class="fourth-card1-inf">
+                            <div class="fourth-card1-info">
+                                <h1>пробег</h1>
+                                <h2>30 840 км</h2>
+                            </div>
+
+                            <div class="fourth-card1-info">
+                                <h1>Владельцы</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        
+                        <div class="fourth-card1-price">
+                            <a href="./Catalog.html"><h1>1 350 890 ₽</h1></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Вторая карточка -->
+                    <div class="fourth-card2">
+                        <div class="fourth-card-img">
+                            <img src="./img/supra.png" alt="">
+                        </div>
+
+                        <div class="fourth-card2-name">
+                            <h1>Toyota GR SuprA A90</h1>
+                            <h2>2019</h2>
+                        </div>
+                        <div class="fourth-card2-inf">
+                            <div class="fourth-card2-info">
+                                <h1>пробег</h1>
+                                <h2>56 852 км</h2>
+                            </div>
+
+                            <div class="fourth-card2-info">
+                                <h1>Владельцы</h1>
+                                <h2>2</h2>
+                            </div>
+                        </div>
+                        
+                        <div class="fourth-card2-price">
+                            <a href="./Catalog.html"><h1>3 750 000 ₽</h1></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Третья карточка -->
+                    <div class="fourth-card3">
+                        <div class="fourth-card-img">
+                            <img src="./img/mustang.png" alt="">
+                        </div>
+
+                        <div class="fourth-card3-name">
+                            <h1>Ford Mustang Shelby</h1>
+                            <h2>2021</h2>
+                        </div>
+                        <div class="fourth-card3-inf">
+                            <div class="fourth-card3-info">
+                                <h1>пробег</h1>
+                                <h2>10 315 км</h2>
+                            </div>
+
+                            <div class="fourth-card3-info">
+                                <h1>Владельцы</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                        
+                        <div class="fourth-card3-price">
+                            <a href="./Catalog.html"><h1>4 320 000 ₽</h1></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </fourth-section>
+
+        <five-section id="map">
+            <div class="five-sec">
+                <div class="five-adress">
+                    <h1>Челябинск <br> Пушкина 66/8 <br> <br> 8 (951) 517 48 53</h1>
+                </div>
+
+                <div class="five-map">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/56/chelyabinsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Челябинск</a><a href="https://yandex.ru/maps/56/chelyabinsk/house/ulitsa_pushkina_66/YkgYcgdpT0wCQFtvfX10dn9rZg==/?ll=61.413434%2C55.155786&utm_medium=mapframe&utm_source=maps&z=15.41" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Пушкина, 66 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUrQADiDA" width="765" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </five-section>
+
+        <footer>
+            <div class="foot">
+                <div class="foot-img">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
